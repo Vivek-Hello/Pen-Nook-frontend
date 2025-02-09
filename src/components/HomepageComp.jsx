@@ -23,8 +23,8 @@ const HomepageComp = ({ value, onClick }) => {
         </p>
       
       <div className="flex"> 
-      {value.category.map((cat)=>{
-        <span className="p-2 bg-slate-500 text-white">{cat}</span>
+      {value.category.map((cat,index)=>{
+        <span key={index} className="p-2 bg-slate-500 text-white">{cat}</span>
       })}
       </div>
       
